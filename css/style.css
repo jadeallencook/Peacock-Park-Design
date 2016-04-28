@@ -33,6 +33,7 @@ a:active {
 
 #container {
     width: 100%;
+    min-width: 1000px;
 }
 
 div#banner-holder img {
@@ -89,6 +90,9 @@ div#banner-holder img {
     width: 32%;
     display: inline-block;
     cursor: pointer;
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 #press-holder img:hover,
