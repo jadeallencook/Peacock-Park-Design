@@ -1,0 +1,167 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Helvetica';
+}
+
+a:link {
+    text-decoration: none;
+    color: #007399;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #007399;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #007399;
+}
+
+a:active {
+    text-decoration: none;
+    color: #007399;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#container {
+    width: 100%;
+}
+
+div#banner-holder img {
+    width: 100%;
+}
+
+#banner-text {
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: absolute;
+    margin-top: -23px;
+    font-weight: 100;
+    font-size: .75em;
+}
+
+#navbar-holder {
+    width: 100%;
+    height: 125px;
+    margin-top: -4px;
+    background-image: url('../img/nav-bg.png');
+    background-size: cover;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.5);
+    border-top: solid 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#navbar-holder a img {
+    height: 100px;
+    margin-top: 11px;
+    display: inline-block;
+}
+
+#press-holder {
+    text-align: center;
+}
+
+#press-holder img {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px 0px;
+    min-width: 1000px;
+}
+
+#photos-holder div#frames {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    display: block;
+    margin: 25px auto -350px auto;
+}
+
+#photos-holder div img {
+    width: 32%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#press-holder img:hover,
+#where:hover {
+    opacity: 0.5;
+}
+
+div#content-holder div,
+div#content-holder img {
+    width: 35%;
+    display: inline-block;
+    max-width: 450px;
+    cursor: pointer;
+}
+
+#photo-frame {
+    margin-left: 100px;
+    margin-top: -100px;
+}
+
+div#content-holder div img {
+    width: 100%;
+}
+
+#accent-holder img {
+    display: inline-block;
+    max-width: 1200px;
+    margin-top: -35%;
+    width: 90%
+}
+
+#insta-photo {
+    display: inline-block;
+    margin-top: -125px;
+}
+
+#frame-content {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    display: inline-block;
+    height: 300px;
+    margin-bottom: 65px;
+}
+
+#frame-content div {
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+}
+
+#left-frame, #right-frame {
+    width: 17%;
+    height: 285px;
+}
+
+#middle-frame {
+    width: 19%;
+    margin: 0px 80px;
+    margin-top: -3px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: 1300px) {
+    #accent-holder img {
+        margin-top: -30%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #accent-holder img {
+        margin-top: -24%;
+    }
+}
