@@ -40,16 +40,18 @@ var build = {
 
         // after gDoc loads
         function insertDoc(data, tabletop) {
-            console.log(data.Sheet1.elements);
             $('div#left-frame').empty().css({
                 backgroundImage: 'url("' + data.Sheet1.elements[0].photo + '")'
-            });
+            })
+            $('#story-link').attr('href', data.Sheet1.elements[0].link);
             $('div#middle-frame').empty().css({
                 backgroundImage: 'url("' + data.Sheet1.elements[1].photo + '")'
             });
+            $('#instagram-link').attr('href', data.Sheet1.elements[1].link);
             $('div#featured-product').empty().css({
                 backgroundImage: 'url("' + data.Sheet1.elements[2].photo + '")'
             });
+            $('#featured-link').attr('href', data.Sheet1.elements[2].link);
         }
 
         // calling and appending gDoc info
