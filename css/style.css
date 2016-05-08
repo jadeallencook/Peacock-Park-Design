@@ -100,7 +100,11 @@ div#banner-holder img {
     opacity: 0.5;
 }
 
-div#content-holder div,
+div#content-holder {
+    
+}
+
+div#content-holder div.left-side,
 div#content-holder img {
     width: 35%;
     display: inline-block;
@@ -108,9 +112,23 @@ div#content-holder img {
     cursor: pointer;
 }
 
+div#featured-product {
+    position: absolute;
+    display: inline-block;
+    height: 45%;
+    width: 26%;
+    max-width: 375px;
+    margin-left: 135px;
+    margin-top: 110px;
+    background-size: cover;
+    background-position: center;
+}
+
 #photo-frame {
     margin-left: 100px;
     margin-top: -100px;
+    z-index: 9999;
+    position: relative;
 }
 
 div#content-holder div img {

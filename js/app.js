@@ -12,7 +12,7 @@ var info = {
 };
 
 var build = {
-    document: function() {
+    document: function () {
         $('html, body').css({
             backgroundColor: info.overflow
         });
@@ -20,23 +20,42 @@ var build = {
             backgroundColor: info.content
         });
     },
-    banner: function() {
+    banner: function () {
         var banner = info.banner;
         $('#banner-holder').empty().append(
             '<a href="' + banner.link + '">' +
-            '<img src="' + banner.img + '" /></a>' + 
+            '<img src="' + banner.img + '" /></a>' +
             '<span id="banner-text">' + banner.text + '</span>'
         );
     },
-    frames: function() {
-        $('#left-frame').empty().css({
-            backgroundImage: 'url(https://scontent.fsnc1-1.fna.fbcdn.net/t31.0-8/10005937_10203536846281560_8737587711572837827_o.jpg)'
-        });
-        $('#middle-frame').empty().css({
-            backgroundImage: 'url(https://instagram.fsnc1-1.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/12918636_608692159294527_26499287_n.jpg?ig_cache_key=MTIyMTgwODkwNjcwOTA1NzE4Mg%3D%3D.2)'
-        });
-    }, 
-    all: function() {
+    frames: function () {
+        // using tabletop to get gDoc
+        function tabletop(doc) {
+            Tabletop.init({
+                key: doc,
+                callback: insertDoc,
+                simpleSheet: false
+            });
+        }
+
+        // after gDoc loads
+        function insertDoc(data, tabletop) {
+            console.log(data.Sheet1.elements);
+            $('div#left-frame').empty().css({
+                backgroundImage: 'url("' + data.Sheet1.elements[0].photo + '")'
+            });
+            $('div#middle-frame').empty().css({
+                backgroundImage: 'url("' + data.Sheet1.elements[1].photo + '")'
+            });
+            $('div#featured-product').empty().css({
+                backgroundImage: 'url("' + data.Sheet1.elements[2].photo + '")'
+            });
+        }
+
+        // calling and appending gDoc info
+        tabletop('1rObbrV92DzNdiEX5YZ12JpBOJsB8ODmynMR1tc-fPkI');
+    },
+    all: function () {
         var b = build;
         b.document();
         b.banner();
@@ -44,6 +63,6 @@ var build = {
     }
 };
 
-$(document).ready(function(){
+$(document).ready(function () {
     build.all();
 });
