@@ -217,11 +217,11 @@ div.fb-like {
 }
 
 
-/* iphone 6 portrait */
+/* iphone 6 */
 
 @media only screen and (max-device-width: 667px) {
     div#featured-product {
-        height: 30%;
+        height: 400px;
         margin-left: 140px;
     }
     #left-frame,
