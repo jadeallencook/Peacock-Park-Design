@@ -252,9 +252,9 @@ div#our-story {
 }
 
 div#our-story iframe {
-    position: relative;
-    top: 75%;
-    transform: translateY(100%);
+    position: fixed;
+    height: 100%;
+    width: 100%;
 }
 
 div#our-story span {

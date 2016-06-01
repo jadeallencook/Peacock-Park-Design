@@ -42,8 +42,7 @@ var build = {
         function insertDoc(data, tabletop) {
             $('div#left-frame').empty().css({
                 backgroundImage: 'url("' + data.Sheet1.elements[0].photo + '")'
-            })
-            $('#story-link').attr('href', data.Sheet1.elements[0].link);
+            });
             $('div#middle-frame').empty().css({
                 backgroundImage: 'url("' + data.Sheet1.elements[1].photo + '")'
             });
@@ -67,14 +66,5 @@ var build = {
 
 $(document).ready(function () {
     build.all();
-    $('a#story-link').mousedown(function () {
-        $('div#our-story').css({
-            display: 'inline-block'
-        });
-        $('span#close-video').mousedown(function () {
-            $('div#our-story').css({
-                display: 'none'
-            });
-        });
-    });
 });
+
