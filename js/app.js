@@ -67,4 +67,14 @@ var build = {
 
 $(document).ready(function () {
     build.all();
+    $('a#story-link').mousedown(function () {
+        $('div#our-story').css({
+            display: 'inline-block'
+        });
+        $('span#close-video').mousedown(function () {
+            $('div#our-story').css({
+                display: 'none'
+            });
+        });
+    });
 });

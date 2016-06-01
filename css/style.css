@@ -125,7 +125,7 @@ div#featured-product {
 #photo-frame {
     margin-left: 100px;
     margin-top: -100px;
-    z-index: 9999;
+    z-index: 8888;
     position: relative;
 }
 
@@ -238,4 +238,28 @@ div.fb-like {
         width: 75%;
         min-width: 500px;
     }
+}
+
+/* our story video */
+
+div#our-story {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+div#our-story iframe {
+    position: relative;
+    top: 75%;
+    transform: translateY(100%);
+}
+
+div#our-story span {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
 }
