@@ -47,10 +47,20 @@ var build = {
                 backgroundImage: 'url("' + data.Sheet1.elements[1].photo + '")'
             });
             $('#instagram-link').attr('href', data.Sheet1.elements[1].link);
+            // featured product section
+            var currentFeatured = (data.featured.elements.length - 1);
             $('div#featured-product').empty().css({
-                backgroundImage: 'url("' + data.Sheet1.elements[2].photo + '")'
+                backgroundImage: 'url("' + data.featured.elements[currentFeatured].photo + '")'
             });
-            $('#featured-link').attr('href', data.Sheet1.elements[2].link);
+            $('#featured-link').attr('href', data.featured.elements[currentFeatured].link);
+            var showFeatured = setInterval(function () {
+                if (currentFeatured >= (data.featured.elements.length - 1)) currentFeatured = 0;
+                else currentFeatured++;
+                $('div#featured-product').empty().css({
+                    backgroundImage: 'url("' + data.featured.elements[currentFeatured].photo + '")'
+                });
+                $('#featured-link').attr('href', data.featured.elements[currentFeatured].link);
+            }, 2500);
         }
 
         // calling and appending gDoc info
@@ -66,5 +76,14 @@ var build = {
 
 $(document).ready(function () {
     build.all();
+    $('img#become-retail').click(function () {
+        $('div#retailer-wrapper').css({
+            display: 'inline-block'
+        });
+        $('a#close-retailer').click(function () {
+            $('div#retailer-wrapper').css({
+                display: 'none'
+            });
+        });
+    });
 });
-
