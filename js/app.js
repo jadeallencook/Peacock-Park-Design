@@ -60,7 +60,7 @@ var build = {
                     backgroundImage: 'url("' + data.featured.elements[currentFeatured].photo + '")'
                 });
                 $('#featured-link').attr('href', data.featured.elements[currentFeatured].link);
-            }, 2500);
+            }, 5000);
         }
 
         // calling and appending gDoc info
