@@ -382,7 +382,7 @@ div#press-articles {
     max-width: 1200px;
 }
 
-div.press-article {
+div#press-article-1 {
     display: inline-block;
     width: 100%;
     text-align: left;
@@ -390,22 +390,16 @@ div.press-article {
 }
 
 div.press-article h1 {
-    margin-top: 0px;
+    margin-top: 15px;
     font-family: 'Jacques Francois Shadow', cursive;
+    padding-bottom: 15px;
+    border-bottom: solid thin black;
 }
 
-div.press-article p {
+div.press-article h1 p {
     font-family: 'Courier';
     font-size: 1em;
-}
-
-img.press-image {
-    display: inline-block;
-    height: 250px;
-    float: left;
-    margin-right: 25px;
-    margin-bottom: 15px;
-    margin-top: 7px;
+    text-align: left;
 }
 
 span.press-date {
@@ -421,4 +415,40 @@ span#copyright {
     margin-bottom: 15px;
     font-size: 0.75em;
     line-height: 15px;
+    margin-top: 25px;
+}
+
+img#press-image-1 {
+    max-width: 100%;
+    max-height: 500px;
+    margin-top: -55px;
+}
+
+div#press-article-1 {
+    border-bottom: solid thin black;
+}
+
+div.press-article p {
+    text-align: left;
+    font-family: 'courier';
+}
+
+div#press-article-2,
+div#press-article-3 {
+    display: inline-block;
+    width: 46%;
+    text-align: left;
+}
+
+div#press-article-2 {
+    border-right: solid thin black;
+    margin-left: -2px;
+    padding-right: 25px;
+    margin-right: 25px;
+}
+
+div#press-article-2 img,
+div#press-article-3 img {
+    max-width: 100%;
+    margin-top: -15px;
 }
