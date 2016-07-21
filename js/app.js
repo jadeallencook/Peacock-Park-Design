@@ -24,7 +24,7 @@ var build = {
         var banner = info.banner;
         $('#banner-holder').empty().append(
             '<a href="' + banner.link + '">' +
-            '<img src="' + banner.img + '" /></a>' +
+            '<img src="' + banner.img + '" id="contact-us" /></a>' +
             '<span id="banner-text">' + banner.text + '</span>'
         );
     },
@@ -41,12 +41,12 @@ var build = {
         // after gDoc loads
         function insertDoc(data, tabletop) {
             $('div#left-frame').empty().css({
-                backgroundImage: 'url("' + data.Sheet1.elements[0].photo + '")'
+                backgroundImage: 'url("' + data.buttons.elements[0].photo + '")'
             });
             $('div#middle-frame').empty().css({
-                backgroundImage: 'url("' + data.Sheet1.elements[1].photo + '")'
+                backgroundImage: 'url("' + data.buttons.elements[1].photo + '")'
             });
-            $('#instagram-link').attr('href', data.Sheet1.elements[1].link);
+            $('#instagram-link').attr('href', data.buttons.elements[1].link);
             // featured product section
             var currentFeatured = (data.featured.elements.length - 1);
             $('div#featured-product').empty().css({
@@ -82,6 +82,16 @@ $(document).ready(function () {
         });
         $('a#close-retailer').click(function () {
             $('div#retailer-wrapper').css({
+                display: 'none'
+            });
+        });
+    });
+    $('img#contact-us').click(function () {
+        $('div#contact-us').css({
+            display: 'inline-block'
+        });
+        $('a#close-contact').click(function () {
+            $('div#contact-us').css({
                 display: 'none'
             });
         });

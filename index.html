@@ -5,6 +5,7 @@
 <head>
     <title>Peacock Park Design</title>
     <link href="css/hover-min.css" rel="stylesheet" type="text/css" />
+    <link href="css/milligram.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Zeyada' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow' rel='stylesheet' type='text/css'>
@@ -13,8 +14,17 @@
 </head>
 
 <body>
+    <div id="contact-us">
+        <h1>Contact Us!</h1>
+        <form id="contact-us-form">
+            <input type="text" name="name" placeholder="Jane Smith" /><br />
+            <input type="text" name="email" placeholder="janesmith@gmail.com" /><br />
+            <input type="text" name="message" placeholder="Keep up the good work!" /><br />
+            <input type="submit" value="Send Mail!" /> <br /><br />
+            <a id="close-contact" style="font-size: 1.5em; cursor: pointer;">CLOSE WINDOW</a>
+        </form>
+    </div>
     <div id="retailer-wrapper">
-        <h1>Become a Retailer</h1>
         <p>Click Below to Download Our Retailer Application.</p>
         <p>Please fill out the provided forms and email, fax or mail to us with a copy of your state resale certificate.</p>
         <p><a href="etc/10-29-14_NEW_PPD_APP.pdf" target="_blank">10-29-14_NEW_PPD_APP.pdf</a></p>
@@ -81,7 +91,10 @@
                 </script>
                 <div class="fb-like" data-href="https://www.facebook.com/peacockparkdesign" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
                 <!-- UI images -->
-                <img id="become-retail" src="img/retailer.png" />
+                <img id="become-retail" src="img/retailer_01.png" />
+                <a href="https://www.youtube.com/c/peacockparkdesign" target="_blank">
+                    <img id="youtube" src="img/retailer_02.png" />
+                </a>
                 <img src="img/where.png" id="where" />
             </div>
             <a id="featured-link">
@@ -95,33 +108,37 @@
         <div class="block" id="press-holder">
             <img src="img/press-header.png" id="press-header" />
             <center>
-                <div id="press-articles">
+                <div id="press-articles" class="container">
                     <!-- loop articles -->
-                    <div class="press-article" id="press-article-1">
-                        <center>
+                    <div class="row">
+                        <div class="column" id="press-article-1">
+                            <center>
+                                <br />
+                                <img class="press-image" id="press-image-1" src="img/farmer.jpg" />
+                                <br />
+                                <h1>Ipsum Justo Vehicula</h1>
+                                <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+                                <p>Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column" id="press-article-2">
                             <br />
-                            <img class="press-image" id="press-image-1" src="img/farmer.jpg" />
+                            <img class="press-image" id="press-image-2" src="img/farmer.jpg" />
                             <br />
                             <h1>Ipsum Justo Vehicula</h1>
                             <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
                             <p>Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                        </center>
-                    </div>
-                    <div class="press-article" id="press-article-2">
-                        <br />
-                        <img class="press-image" id="press-image-2" src="img/farmer.jpg" />
-                        <br />
-                        <h1>Ipsum Justo Vehicula</h1>
-                        <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
-                        <p>Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                    </div>
-                    <div class="press-article" id="press-article-3">
-                        <br />
-                        <img class="press-image" id="press-image-3" src="img/farmer.jpg" />
-                        <br />
-                        <h1>Ipsum Justo Vehicula</h1>
-                        <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
-                        <p>Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                        </div>
+                        <div class="column" id="press-article-3">
+                            <br />
+                            <img class="press-image" id="press-image-3" src="img/farmer.jpg" />
+                            <br />
+                            <h1>Ipsum Justo Vehicula</h1>
+                            <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+                            <p>Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                        </div>
                     </div>
                 </div>
             </center>

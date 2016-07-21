@@ -345,12 +345,55 @@ div#our-story span {
 
 div#retailer-wrapper {
     background-color: #F4E7CF;
+    background-image: url(../img/become_retailer_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
     display: none;
     position: fixed;
     height: 100%;
     width: 100%;
     z-index: 9999;
+    padding: 25% 25px 0px 25px;
+}
+
+div#contact-us {
+    background-color: #F4E7CF;
+    background-image: url(../img/contact_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    padding: 25px;
     text-align: center;
+}
+
+form#contact-us-form input[type=text] {
+    margin: 5px;
+    border: none;
+    padding: 5px; 
+    border-radius: 3px;
+    width: 75%;
+    max-width: 250px;
+}
+
+form#contact-us-form input[type=submit] {
+    margin: 5px;
+    border: none;
+    padding: 5px; 
+    border-radius: 3px;
+    width: 75%;
+    max-width: 250px;
+    background-color: #007399;
+    color: #fff;
+}
+
+div#contact-us h1 {
+    font-family: 'Jacques Francois Shadow', cursive;
 }
 
 div#retailer-wrapper a {
@@ -433,22 +476,16 @@ div.press-article p {
     font-family: 'courier';
 }
 
-div#press-article-2,
-div#press-article-3 {
-    display: inline-block;
-    width: 46%;
-    text-align: left;
-}
-
 div#press-article-2 {
     border-right: solid thin black;
-    margin-left: -2px;
-    padding-right: 25px;
-    margin-right: 25px;
 }
 
 div#press-article-2 img,
 div#press-article-3 img {
     max-width: 100%;
     margin-top: -15px;
+}
+
+img#youtube {
+    margin-top: -5px;
 }
