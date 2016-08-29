@@ -140,21 +140,18 @@ img#accent {
 }
 
 div#press-holder {
-    margin-top: 165px;
+    margin-top: 265px;
 }
 
 @media screen and (min-width: 1100px) {
     img#accent {
         margin-left: -44.5%;
     }
-    div#press-holder {
-        margin-top: 165px;
-    }
 }
 
 @media screen and (min-width: 1200px) {
     div#press-holder {
-        margin-top: 250px;
+        margin-top: 350px;
     }
 }
 
@@ -375,7 +372,7 @@ div#contact-us {
 form#contact-us-form input[type=text] {
     margin: 5px;
     border: none;
-    padding: 5px; 
+    padding: 5px;
     border-radius: 3px;
     width: 75%;
     max-width: 250px;
@@ -384,7 +381,7 @@ form#contact-us-form input[type=text] {
 form#contact-us-form input[type=submit] {
     margin: 5px;
     border: none;
-    padding: 5px; 
+    padding: 5px;
     border-radius: 3px;
     width: 75%;
     max-width: 250px;
@@ -401,54 +398,8 @@ div#retailer-wrapper a {
     cursor: pointer;
 }
 
-div#press-wrapper {
-    display: inline-block;
-    width: 100%;
-    background-color: #F4E7CF;
-    text-align: center;
-}
-
-img#press-header {
-    display: inline-block;
-    width: 95%;
-    max-width: 1200px;
-    margin-top: 75px;
-    margin-bottom: 50px;
-}
-
 img#where {
     cursor: pointer;
-}
-
-div#press-articles {
-    width: 75%;
-    max-width: 1200px;
-}
-
-div#press-article-1 {
-    display: inline-block;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 50px;
-}
-
-div.press-article h1 {
-    margin-top: 15px;
-    font-family: 'Jacques Francois Shadow', cursive;
-    padding-bottom: 15px;
-    border-bottom: solid thin black;
-}
-
-div.press-article h1 p {
-    font-family: 'Courier';
-    font-size: 1em;
-    text-align: left;
-}
-
-span.press-date {
-    font-size: .75em;
-    font-weight: 100;
-    font-family: 'Courier';
 }
 
 span#copyright {
@@ -461,31 +412,54 @@ span#copyright {
     margin-top: 25px;
 }
 
-img#press-image-1 {
-    max-width: 100%;
-    max-height: 500px;
-    margin-top: -55px;
+img#youtube {
+    margin-top: -5px;
+}
+
+div#peacock-press-articles {
+    width: 90%;
+    max-width: 1200px;
 }
 
 div#press-article-1 {
+    display: block;
+    width: 100%;
     border-bottom: solid thin black;
+    text-align: left;
 }
 
-div.press-article p {
+img#press-image-1 {
+    max-width: 100%;
+}
+
+div#double-articles {
+    width: 100%;
+    display: block;
+    vertical-align: top;
+}
+
+div#press-article-2,
+div#press-article-3 {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
     text-align: left;
-    font-family: 'courier';
 }
 
 div#press-article-2 {
+    padding-right: 10px;
     border-right: solid thin black;
+}
+
+div#press-article-3 {
+    padding-left: 10px;
 }
 
 div#press-article-2 img,
 div#press-article-3 img {
-    max-width: 100%;
-    margin-top: -15px;
+    max-width: 90%;
 }
 
-img#youtube {
-    margin-top: -5px;
+img#press-header {
+    max-width: 100%;
 }

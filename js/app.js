@@ -61,6 +61,18 @@ var build = {
                 });
                 $('#featured-link').attr('href', data.featured.elements[currentFeatured].link);
             }, 5000);
+            // press article 1
+            $('div#press-article-1 img').attr('src', data.blog.elements[0].photo);
+            $('div#press-article-1 h1').append(data.blog.elements[0].header);
+            $('div#press-article-1 p').append(data.blog.elements[0].body);
+            // press article 2
+            $('div#press-article-2 img').attr('src', data.blog.elements[1].photo);
+            $('div#press-article-2 h1').append(data.blog.elements[1].header);
+            $('div#press-article-2 p').append(data.blog.elements[1].body);
+            // press article 3
+            $('div#press-article-3 img').attr('src', data.blog.elements[2].photo);
+            $('div#press-article-3 h1').append(data.blog.elements[2].header);
+            $('div#press-article-3 p').append(data.blog.elements[2].body);
         }
 
         // calling and appending gDoc info
