@@ -19,6 +19,7 @@ $(function () {
         var build = {
             menu: function () {
                 $app.empty();
+                $app.append('<span id="close">X</span>');
                 for (var i = 0; i < length; i++) {
                     var html = '<div class="press-item" id="' + i + '">';
                     html += '<img src="' + data[i].cover + '" />';
@@ -28,6 +29,9 @@ $(function () {
                 }
                 $('div.press-item').click(function () {
                     build.selected($(this).attr('id'));
+                });
+                $('span#close').click(function() {
+                    window.top.close();
                 });
             },
             selected: function (id) {

@@ -87,6 +87,15 @@ var build = {
 };
 
 $(document).ready(function () {
+    function scrollHand() {
+        if ($(window).scrollTop() === 0) {
+            $('div#scroll-down').fadeIn(1500);
+            $(window).scroll(function () {
+                $('div#scroll-down').fadeOut(750);
+            });
+        }
+    }
+    setTimeout(scrollHand, 5000);
     build.all();
     $('img#become-retail').click(function () {
         $('div#retailer-wrapper').css({
@@ -99,6 +108,15 @@ $(document).ready(function () {
         });
     });
     $('img#contact-us').click(function () {
+        $('form#contact-us-form').ready(function () {
+            gDoc({
+                connect: true,
+                id: '1FAIpQLSeX8nzpoRTK5sVy6_Ox32MWnj_3Ajilzd9yj-SSIO0UhmfHmg',
+                appendTo: 'contact-us-form',
+                submitValue: 'Submit Form', // submit button text
+                successMsg: 'It worked!', // success message after submit
+            });
+        });
         $('div#contact-us').css({
             display: 'inline-block'
         });

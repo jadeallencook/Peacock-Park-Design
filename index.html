@@ -4,39 +4,55 @@
 
 <head>
     <title>Peacock Park Design</title>
+    <!-- css -->
     <link href="css/hover-min.css" rel="stylesheet" type="text/css" />
     <link href="css/milligram.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Zeyada' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow' rel='stylesheet' type='text/css'>
+    <!-- js -->
     <script src="js/jquery.min.js"></script>
     <script src="js/tabletop.js"></script>
+    <script src="js/gDoc.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 </head>
 
 <body>
     <div id="contact-us">
-        <h1>Contact Us!</h1>
-        <form id="contact-us-form">
-            <input type="text" name="name" placeholder="Jane Smith" />
-            <br />
-            <input type="text" name="email" placeholder="janesmith@gmail.com" />
-            <br />
-            <input type="text" name="message" placeholder="Keep up the good work!" />
-            <br />
-            <input type="submit" value="Send Mail!" />
-            <br />
-            <br />
+        <img src="img/contact-man.png" id="contact-man" />
+        <div>
+            <h1>Contact Us!</h1>
+            <center>
+                <form id="contact-us-form"></form>
+            </center>
             <a id="close-contact" style="font-size: 1.5em; cursor: pointer;">CLOSE WINDOW</a>
-        </form>
+            <br />
+            <br />
+            <p>
+                1 (866) 504-4004
+                <br /> 14375 Torrey Road
+                <br /> Fenton, MI 48430
+            </p>
+        </div>
     </div>
     <div id="retailer-wrapper">
-        <p>Click Below to Download Our Retailer Application.</p>
-        <p>Please fill out the provided forms and email, fax or mail to us with a copy of your state resale certificate.</p>
-        <p><a href="etc/10-29-14_NEW_PPD_APP.pdf" target="_blank">10-29-14_NEW_PPD_APP.pdf</a></p>
-        <p><b>Email</b> sales@peacockparkdesign.com</p>
-        <p><b>Fax</b> 810-519-5741</p>
-        <p><b>Address</b> 14375 Torrey Rd, Fenton, MI 48430</p>
-        <p><a id="close-retailer" style="font-size: 1.5em;">CLOSE WINDOW</a></p>
+        <img src="img/retail-girl.png" id="retail-girl" />
+        <div>
+            <h1>Become A Retailer</h1>
+            <p>Click Below to Download Our Retailer Application.</p>
+            <p>Please fill out the provided forms and email, fax or mail to us with a copy of your state resale certificate.</p>
+            <p><a href="etc/10-29-14_NEW_PPD_APP.pdf" target="_blank">10-29-14_NEW_PPD_APP.pdf</a></p>
+            <p><b>Email</b> sales@peacockparkdesign.com</p>
+            <p><b>Fax</b> 810-519-5741</p>
+            <p><b>Address</b> 14375 Torrey Rd, Fenton, MI 48430</p>
+            <p><a id="close-retailer" style="font-size: 1.5em;">CLOSE WINDOW</a></p>
+        </div>
+    </div>
+    <div id="scroll-down">
+        <div>
+            <img src="img/hand.png" />
+        </div>
     </div>
     <div id="container">
         <div class="block" id="banner-holder"></div>
@@ -104,7 +120,7 @@
                     <img src="img/where.png" id="where" />
                 </a>
             </div>
-            <a id="featured-link">
+            <a id="featured-link" target="_blank">
                 <div id="featured-product"></div>
                 <img src="img/photo.png" id="photo-frame" />
             </a>
