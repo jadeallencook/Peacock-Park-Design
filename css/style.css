@@ -31,9 +31,13 @@ a:active {
     text-align: center;
 }
 
-#container {
+div#container {
     width: 100%;
     min-width: 1000px;
+    background-image: url('../img/paper.png');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
 }
 
 div#banner-holder img {
@@ -54,7 +58,7 @@ div#banner-holder img {
     width: 100%;
     height: 125px;
     margin-top: -4px;
-    background-image: url('../img/nav-bg-blue.png');
+    background-image: url('../img/nav-bg.png');
     background-size: cover;
     border-bottom: solid 5px rgba(0, 0, 0, 0.5);
     border-top: solid 5px rgba(0, 0, 0, 0.5);
@@ -533,4 +537,9 @@ form#contact-us-form textarea {
     width: 75%;
     max-width: 250px;
     height: 100px;
+}
+
+img#retail-stockist {
+    display: block;
+    margin-bottom: -5px;
 }
