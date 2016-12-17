@@ -86,7 +86,7 @@ var build = {
     }
 };
 
-$(document).ready(function () {
+$(function () {
     function scrollHand() {
         if ($(window).scrollTop() === 0) {
             $('div#scroll-down').fadeIn(1500);
@@ -125,5 +125,10 @@ $(document).ready(function () {
                 display: 'none'
             });
         });
+    });
+    console.log(true)
+    $('div#peacock-press-articles').hide();
+    $('img#press-header').click(function(){
+        $('div#peacock-press-articles').show();
     });
 });
