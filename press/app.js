@@ -47,6 +47,11 @@ $(function () {
                 html += addImage(data[id].page3);
                 html += addImage(data[id].page4);
                 html += addImage(data[id].page5);
+                html += addImage(data[id].page6);
+                html += addImage(data[id].page7);
+                html += addImage(data[id].page8);
+                html += addImage(data[id].page9);
+                html += addImage(data[id].page10);
                 $app.append(html);
                 $('span#close').click(function () {
                     build.menu();
