@@ -131,4 +131,10 @@ $(function () {
     $('img#press-header').click(function(){
         $('div#peacock-press-articles').show();
     });
+    
+    $('a#retailist').click(function(){
+        $('div#coming-soon').show().click(function(){
+            $('div#coming-soon').hide();
+        });
+    });
 });
